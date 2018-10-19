@@ -1,0 +1,193 @@
+:root{
+    --blue:#1698d9;
+    --blue-hover:#2ea8e6;
+    --ping:#d91667;
+    --ping-hover:#e62e7a;
+    --grey:#b3b3b3;
+    --weight-font-size:2.2vw;
+}
+
+main{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/pattern.png);
+    top: 0;
+    left: 0;
+    font-family: "Exo";
+    box-shadow: inset 0 0 20vw #000000;
+}
+
+strong{
+    cursor: pointer;
+}
+
+main h1{
+    text-align: center;
+    color: white;
+}
+
+/* FONTS */
+
+h2, h3, span, .weight{
+    font-family: "Trebuchet MS";
+
+}
+
+/* MAIN GRID */
+
+.disabled{
+    height: 101.3%;
+    border-radius: 10px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 100% 100%, 0% 100%, 0 12%);
+    position: absolute;
+    background: #ffffffab;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    width: 80%;
+    margin: 0 auto;
+    height: 70vh;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.form-wrap {
+    height: 100%;
+    border-radius: 10px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 100% 100%, 0% 100%, 0 12%);
+}
+
+
+ form{
+    padding: 0 0 0 20%;
+    background-image: url(../img/funbox_logo.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position-y: 15vw;
+    background-position-x: -2vw;
+    background-size: 125%;
+    height: calc(100% - 1px);
+    border-radius: 10px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 100% 100%, 0% 100%, 0 12%);
+    position: relative;
+}
+
+.grid-elem{
+    position: relative;
+}
+.grid-elem-1 .form-wrap form{
+   /* border: 4px solid #1698d9; */
+}
+
+.grid-elem-2 .form-wrap form{
+   /* border: 4px solid #d91667;*/
+}
+
+.grid-elem-3 .form-wrap form{
+   /* border: 4px solid #b3b3b3;*/
+}
+
+.grid-elem-1 .form-wrap, .grid-elem-2 .form-wrap, .grid-elem-3 .form-wrap{
+    padding: 4px;
+} 
+
+/*========*/
+
+/* IN FORM ELEMENTS */
+
+.top-label{ 
+    padding: 11% 0 4%;
+    font-size: 0.9vw;
+
+}
+
+span{
+    font-weight:bold;
+    color: grey;
+}
+form h2{
+    font-size: 2.7vw;
+    margin: 0;
+}
+
+form h3{
+    margin: 10px 0;
+    font-size: 1.4vw;
+}
+
+.post-form-text a{
+    text-decoration: dashed;
+}
+
+.default .weight, .default  {
+    background: var(--blue); 
+}
+.default:hover .weight, .default:hover {
+    background: var(--blue-hover); 
+}
+
+.selected .weight, .selected{
+   background: var(--ping);
+}
+
+.selected:hover .weight, .selected:hover {
+    background: var(--ping-hover);
+}
+.dis{
+    background: var(--grey);
+}
+.weight{
+    bottom: 2%;
+    color: white;
+    right: 4%;
+    position: absolute;
+    font-size:calc(var(--weight-font-size));
+    text-align: center;
+    width:calc(var(--weight-font-size)*2.5);
+    height:calc(var(--weight-font-size)*2.5);
+    border-radius: 50%;
+    vertical-align: center;
+    line-height: calc(var(--weight-font-size)*2);
+
+}
+.weight:before{
+    content: "кг";
+    font-size: calc(var(--weight-font-size)*1/2);
+    position: absolute;
+    bottom: -1vw;
+    right: calc(var(--weight-font-size));
+
+}
+
+
+/*========*/
+
+
+.post-form-text{
+    text-align: center;
+    padding: 1.2vw 0;
+    color:white;
+}
+
+.post-form-text strong{
+    border-bottom: 1px dashed;
+    color: var(--blue);
+}
+
+.disaabled-post-form-text{
+    color:yellow;
+}
+
+
+/*switch button */
+
+
+

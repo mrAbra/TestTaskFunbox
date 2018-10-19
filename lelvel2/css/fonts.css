@@ -1,0 +1,7 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "Exo";
+	src: url("../fonts/Exo2.0-Thin.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
